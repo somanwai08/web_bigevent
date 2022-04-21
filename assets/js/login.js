@@ -58,13 +58,14 @@ $(function(){
             // 快速获取表单中的数据
             data: $(this).serialize(),
             success:function(res){
+                console.log(res);
                 if(res.status !== 0) {return layer.msg('登录失败')}
 
                 layer.msg('登录成功！')
                 // 将登录成功得到的token保存到本地存储中
                 localStorage.setItem('token',res.token)
                 // 登录成功后调到后台
-                // location.href = '/index.html'
+                location.href = 'login.html'
             }
         }
         )
