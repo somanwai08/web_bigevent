@@ -17,6 +17,7 @@ $(function() {
     })
 })
 
+})
 
 // 获取用户的基本信息
 function getUserInfo(){
@@ -68,4 +69,3 @@ var name = user.nickname || user.username
         $('.text-avatar').html(first).show()
     }
 }
-})
