@@ -11,7 +11,7 @@ $(function() {
             // 清空本地存储的token
             localStorage.removeItem('token')
             //跳转到登录页面
-            location.href = '/code/lo.html'
+            location.href = '/code/login.html'
             // 关闭confirm框
             layer.close(index);
     })
