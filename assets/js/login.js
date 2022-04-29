@@ -65,7 +65,7 @@ $(function(){
                 // 将登录成功得到的token保存到本地存储中
                 localStorage.setItem('token',res.token)
                 // 登录成功后调到后台
-                location.href = 'login.html'
+                location.href = '/code/index.html'
             }
         }
         )
